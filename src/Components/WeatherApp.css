@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+}
+
+.app {
+    min-height: 100vh;
+    padding: 2rem;
+    text-align: center;
+    transition: background 0.5s ease;
+}
+
+.search {
+    margin-bottom: 2rem;
+}
+
+.search input {
+    padding: 10px;
+    width: 250px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.search button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    font-size: 16px;
+    border: none;
+    background: #3498db;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.loading {
+    font-size: 20px;
+}
+
+.info img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Nền theo thời tiết */
+.sun {
+    background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d') center/cover no-repeat;
+}
+.rain {
+    background: url('https://images.unsplash.com/photo-1526676032402-82c9ae3e3378') center/cover no-repeat;
+}
+.cloud {
+    background: url('https://images.unsplash.com/photo-1508856084512-7d4b2be0b4e7') center/cover no-repeat;
+}
+.snow {
+    background: url('https://images.unsplash.com/photo-1608889175122-8701b23690aa') center/cover no-repeat;
+}
+.default {
+    background-color: #333;
+}
