@@ -83,7 +83,6 @@ function WeatherApp() {
 
 
     const convertTime = (time) => {
-        console.log(time);
 
         return new Date(time * 1000).toLocaleTimeString(undefined, {
             hour: '2-digit',
@@ -97,9 +96,9 @@ function WeatherApp() {
             display: 'flex',
             justifyContent: 'center',
             alignItems: 'center',
-
             backgroundColor: '#f0f0f0',
             fontFamily: 'sans-serif',
+            minHeight: '100vh',
 
         }}>
             <div style={{
@@ -134,16 +133,20 @@ function WeatherApp() {
                             fontSize: '1em'
                         }}
                     />
-                    <button onClick={handleSearch} style={{
-                        marginLeft: '8px',
-                        border: 'none',
-                        borderRadius: '5px',
-                        padding: '5px 10px',
-                        backgroundColor: '#000',
-                        color: '#fff',
-                        cursor: 'pointer',
-                        fontSize: '1em'
-                    }}>Tìm</button>
+                    <button
+                        onClick={handleSearch}
+                        style={{
+                            marginLeft: '8px',
+                            border: 'none',
+                            borderRadius: '5px',
+                            padding: '5px 10px',
+                            backgroundColor: '#000',
+                            color: '#fff',
+                            cursor: 'pointer',
+                            fontSize: '1em'
+                    }}>
+                        Tìm
+                    </button>
                 </div>
 
                 {loading && <p>Đang tải dữ liệu...</p>}
